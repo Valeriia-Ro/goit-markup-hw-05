@@ -46,8 +46,15 @@
 
                 <div class="block">
                     <h1 class="main-title">Эффективные решения <br> для вашего бизнеса</h1>
-                    <a class="link-btn" href="">Заказать услугу</a>
-            
+                    <button data-modal-open class="link-btn" href="">Заказать услугу
+                        <div class="backdrop is-hidden" data-modal>
+                            
+                            <div class="modal"> 
+                                <button data-modal-close class="close-btn"></button>
+                             </div>
+                            
+                        </div>
+                    </button>
                 </div>
             
             </div>    
@@ -93,17 +100,21 @@
 
                     <ul class="list ph-list">
                         <li class="element">
-                            <a class="link" href="">
-                            <img class="photo" src="./images/box1.png" alt="Человек набирает код" width="370"/>
+                            <a class="caption-link" href="">
+                                <img class="photo" src="./images/box1.png" alt="Человек набирает код" width="370"/>
+                                <p class="caption">Десктопные приложения</p>
                             </a>
                         </li> 
                         <li class="element"> 
-                            <a class="link" href="">
-                            <img class="photo" src="./images/img.png" alt="Просмотр адаптации страницы под телефон" width="370"/>
+                            <a class="caption-link" href="">
+                                <img class="photo" src="./images/img.png" alt="Просмотр адаптации страницы под телефон" width="370"/>
+                                <p class="caption">Мобильные приложения</p>
                             </a>
                         </li> 
-                        <li class="element"> <a class="link" href="">
-                            <img class="photo" src="./images/img(1).png" alt="Выбор цвета с градации на планшете" width="370"/>
+                        <li class="element"> 
+                            <a class="caption-link" href="">
+                                <img class="photo" src="./images/img(1).png" alt="Выбор цвета с градации на планшете" width="370"/>
+                                <p class="caption">Дизайнерские решения</p>
                             </a>
                         </li>
                     </ul>
@@ -323,6 +334,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="./js/modal.js"></script>
 
 </body>
 </html>
